@@ -11,4 +11,4 @@ Append Grain:
   module.run:
    - name: grains.append
    - key: foo
-   - value: bar
+   - val: bar
