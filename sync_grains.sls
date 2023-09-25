@@ -1,2 +1,8 @@
 Sync Grains:
-  - name: saltutil.sync_grains
+  module.run:
+    - name: saltutil.sync_grains
+    - refresh: true
+
+Echo Grain:
+  cmd.run:
+    - name: echo {{ grains['os'] }}
