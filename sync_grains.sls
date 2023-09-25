@@ -6,3 +6,9 @@ Sync Grains:
 Echo Grain:
   cmd.run:
     - name: echo {{ grains['os'] }}
+
+Append Grain:
+  module.run:
+   - name: grains.append
+   - key: foo
+   - value: bar
