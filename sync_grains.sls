@@ -13,7 +13,7 @@ Append Grain:
 
 Present Grain:
   grains.present:
-   - val: {{ pillar["foo"] }}
+   - value: {{ pillar["foo"] }}
 
 Echo Grain:
   cmd.run:
