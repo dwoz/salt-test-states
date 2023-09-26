@@ -16,8 +16,8 @@ Present Grain:
    - name: grains.present
    - key: foo
    - val: {{ pillar["foo"] }}
-    - require:
-      - module.run: Append Grain
+   - require:
+     - module.run: Append Grain
 
 
 Echo Grain:
