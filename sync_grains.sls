@@ -12,16 +12,11 @@ Append Grain:
 
 
 Present Grain:
-  module.run:
-   - name: grains.present
-   - key: foo
+  grains.present:
    - val: {{ pillar["foo"] }}
-   - require:
-     - module: "Append Grain"
-
 
 Echo Grain:
   cmd.run:
     - name: echo {{ grains['os'] }}
     - require:
-      - module: "Present Grain"
+      - grains: "Present Grain"
